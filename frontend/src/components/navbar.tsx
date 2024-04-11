@@ -13,14 +13,14 @@ const Navbar = () => {
   const { toggleSidebar } = useDashboard();
 
   return (
-    <div className="sticky w-full h-16  right-0 top-0 z-50 border-border/40 bg-none backdrop-blur supports-[backdrop-filter]:bg-none">
+    <div className="fixed w-full h-16 py-4 right-0 top-0 z-50 border-border/40 bg-none backdrop-blur supports-[backdrop-filter]:bg-none">
       <div className="container w-full flex justify-between items-center h-full mx-auto">
         {isHome ? (
           <div className="flex items-center gap-x-2">
             <img src={logo} alt="logo" className="aspect-square w-8 h-8" />
 
             <h4 className="hidden sm:inline-block font-playfair text-accent-foreground text-3xl">
-              LandIt
+              pumpMe
             </h4>
           </div>
         ) : (
