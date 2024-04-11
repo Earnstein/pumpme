@@ -1,0 +1,19 @@
+{
+  "name": "backend2",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "colorts": "^0.1.63"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/oauth-providers": "^0.3.1",
+    "@hono/zod-validator": "^0.2.1",
+    "hono": "^4.0.7",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.2.0"
+  }
+}
