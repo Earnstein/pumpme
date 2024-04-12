@@ -18,7 +18,7 @@ const LandingPage = () => {
         </section>
       </AuroraBackground>
 
-      <section className="w-full h-full bg-zinc-50 dark:bg-zinc-900 text-white">
+      <section className="w-full h-full bg-zinc-50 dark:bg-zinc-800 text-white">
         <Product />
       </section>
 
@@ -26,7 +26,7 @@ const LandingPage = () => {
         <Features />
       </section>
 
-      <section>
+      <section className="bg-zinc-50 dark:bg-zinc-800">
         <Footer />
       </section>
     </>
