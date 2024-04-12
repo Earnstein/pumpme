@@ -1,11 +1,12 @@
 import logo from "@/assets/images/logo.png";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { MenuIcon } from "lucide-react";
 import MobileNavbar from "@/components/mobile-navbar";
 import LogOutButton from "@/components/drop-down";
 import { useDashboard } from "@/hooks/useDashboard";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
@@ -51,14 +52,14 @@ const Navbar = () => {
         <ul className="flex space-x-4 items-center font-palanquin text-sm">
           {isHome ? (
             <>
-              <NavLink to="/signin">
+              <Link to="/signin">
                 <li>
                   <Button variant={"special"} >
                     Login
                   </Button>
                 </li>
-              </NavLink>
-              <NavLink to="/signup">
+              </Link>
+              <Link to="/signup">
                 <li>
                   <Button
                     className="font-palanquin text-secondary"
@@ -67,7 +68,7 @@ const Navbar = () => {
                     Register
                   </Button>
                 </li>
-              </NavLink>
+              </Link>
             </>
           ) : (
             <LogOutButton />
