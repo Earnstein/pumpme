@@ -30,19 +30,11 @@ const Hero = () => {
                   </p>
                   <div className="flex gap-x-2 items-center justify-center md:justify-start">
                     <Link to="/signup">
-                      <Button
-                        variant="outline"
-                        className="font-palanquin sm:text-lg p-4 sm:px-20 sm:py-6 bg-background"
-                      >
-                        Quick Demo
-                      </Button>
-                    </Link>
-
-                    <Link to="/signup">
-                      <Button className="font-palanquin sm:text-lg p-4 sm:px-20 sm:py-6">
+                      <Button className="font-palanquin sm:text-lg px-20 sm:py-6 transform hover:-translate-y-1 transition duration-400">
                         Get Started
                       </Button>
                     </Link>
+                    
                   </div>
                 </motion.div>
                 {/*"IMAGE COMPONENT"*/}
