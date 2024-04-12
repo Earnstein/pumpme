@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Product = () => {
   return (
-    <div className="container px-4 py-8 sm:px-6 sm:py-24 lg:px-8">
+    <div className="container px-4 py-8 sm:px-6 sm:py-24 lg:px-8 relative">
     <motion.div className="max-w-3xl"
     initial="hidden"
     whileInView="visible"
@@ -49,7 +49,7 @@ const Product = () => {
         visible: { opacity: 1, x: 0 },
       }}
       >
-        <article className="space-y-4 font-palaquin text-[16px] font-palanquin text-sm sm:text-xl text-muted-foreground tracking-tight">
+        <article className="space-y-4 sm:text-xl text">
           <p>
             Ready to dive into the exciting universe of blockchain, decentralised finance(DeFi), and web3 programming?
              Pumpme helps you unlock the power crytocurrency. Master web3 development, get the inside scope on the best airdrops, and 
